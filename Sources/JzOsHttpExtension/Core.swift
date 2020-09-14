@@ -28,7 +28,7 @@ open class HttpCore {
                     break
                 }
             }
-        }
+        }.resume()
         let clock=jzclock()
         while(!isend){
             usleep(20*1000)
@@ -60,7 +60,7 @@ open class HttpCore {
                      break
                  }
              }
-         }
+         }.resume()
           let clock=jzclock()
                while(!isend){
                    usleep(20*1000)
