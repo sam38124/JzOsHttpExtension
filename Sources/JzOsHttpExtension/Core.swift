@@ -6,7 +6,7 @@
 //
 
 import Foundation
-class HttpCore {
+open class HttpCore {
     public static func get(_ serverUrl:String,_ timeout:TimeInterval=5)->Data?{
         var returnString:Data? = nil
         var isend=false
