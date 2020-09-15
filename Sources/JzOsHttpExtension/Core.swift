@@ -20,8 +20,8 @@ open class HttpCore {
             if let httpResponse = response as? HTTPURLResponse {
                 switch httpResponse.statusCode {
                 case 200...299:
-                    isend=true
                     returnString=data
+                    isend=true
                     break
                 default:
                     isend=true
@@ -38,6 +38,7 @@ open class HttpCore {
         }
         return returnString
     }
+    
     public static func post(_ serverUrl:String,_ timeout:TimeInterval=5,_ data:Data)->Data?{
          var returnString:Data? = nil
          var isend=false
